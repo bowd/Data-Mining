@@ -1,0 +1,46 @@
+{person}
+aggp|Age Group
+geoa|Geographic Area
+{medical}
+[substance]
+antb|Antibiotic
+bdsu|Body Substance
+clnd|Clinical Drug
+anab|Anatomical Abnormality
+anst|Anatomical Structure
+phsu|Pharmacologic Substance
+sbst|Substance
+hops|Hazardous or Poisonous Substance
+vita|Vitamin
+bacs|Biologically Active Substance
+[bodypart]
+bdsy|Body System
+blor|Body Location or Region
+bpoc|Body Part, Organ, or Organ Component
+bsoj|Body Space or Junction
+[condition]
+dsyn|Disease or Syndrome
+inpo|Injury or Poisoning
+mobd|Mental or Behavioral Dysfunction
+sosy|Sign or Symptom
+virs|Virus
+[treatment]
+topp|Therapeutic or Preventive Procedure
+drdd|Drug Delivery Device
+{lifestyle}
+acty|Activity
+bhvr|Behavior
+dora|Daily or Recreational Activity
+fish|Fish
+food|Food
+inbe|Individual Behavior
+ocac|Occupational Activity
+ocdi|Occupation or Discipline
+plnt|Plant
+popg|Population Group
+prog|Professional or Occupational Group
+socb|Social Behavior
+{describers}
+qlco|Qualitative Concept
+qnco|Quantitative Concept
+tmco|Temporal Concept

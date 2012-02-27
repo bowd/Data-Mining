@@ -31,15 +31,17 @@ end
 
 
 count = 0
-@db['drugs'].find({}, {:sort => [ ['score', :desc] ]} ).each do |drug|
-  processed = false
-  while (!processed) 
-    begin
-      process(drug)
-    rescue Exception => e
-      sleep(1)
-    else
-      processed = true
+@db['drugs'].find({}, {:sort => [ ['score', :desc] ], :timeout => false} ) do |cursor|
+  cursor.each do |drug|
+    processed = false
+    while (!processed) 
+      begin
+        process(drug)
+      rescue Exception => e
+        sleep(1)
+      else
+        processed = true
+      end
     end
   end
 end

@@ -4,6 +4,7 @@ require 'twitter'
 require 'nokogiri'
 require 'open-uri'
 require 'date'
+require 'yaml'
 
 ROOT = File.dirname(File.expand_path(File.dirname(__FILE__)))
 
@@ -25,5 +26,10 @@ Twitter.configure do |config|
   config.oauth_token_secret = "Zyo3i4twu9Zj0Ai3iVYY7hPQuoLtHpP3FPXG59uG4"
 end
 
+IN_QUEUE = 777
+DONE = 778
 
+def log_write(log, msg) 
+  log.puts "[#{Time.now.to_s}] #{msg}"
+end
 
